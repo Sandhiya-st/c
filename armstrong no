@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main() 
+{
+    
+    int n,copy,rem,sum=0;
+    printf("enter the no:");
+    scanf("%d",&n);
+    copy=n;
+    while(copy>0)
+    {
+        rem=copy%10;
+        sum +=rem*rem*rem;
+        copy/=10;
+    }
+    if(sum==n)
+    {
+        printf("armstrong no");
+    }
+    else
+    {
+        printf("not armstrong no");
+    }
+    return 0;
+}
